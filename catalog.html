@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang='ru'>
+  <head>
+    <meta charset='utf-8'>
+    <title>HTML Academy: Девайс</title>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='header'>
+        <a href='#' class='logo'>
+          <img width='200' height='60' alt='logo'/>
+        </a>
+
+        <div class='user-menu'>
+          <div>
+            <form>
+              <input name='q' type='text' placeholder='Поиск по сайту' />
+            </form>
+          </div>
+          <div>
+            <a href='#'>Войти</a>
+          </div>
+          <div>
+            <a href='#'>Сравнить</a>
+            <a href='#'>Корзина</a>
+          </div>
+        </div>
+
+        <div>
+          <ul class='top-menu'>
+            <li>
+              <a href='#'>Каталог товаров</a>
+              <div>
+                <ul>
+                  <li><a href='#'>Вертуальная реальность</a></li>
+                  <li><a href='#'>Фитнесс-браслеты</a></li>
+                  <li><a href='#'>Квадракоптеры</a></li>
+                </ul>
+                <ul>
+                  <li><a href='#'>Фитнесс-браслеты</a></li>
+                  <li><a href='#'>Умные часы</a></li>
+                </ul>
+                <ul>
+                  <li><a href='#'>Квадракоптеры</a></li>
+                </ul>
+              </div>
+
+            </li>
+            <li><a href='#'>Доставка</a></li>
+            <li><a href='#'>Гарантия</a></li>
+            <li><a href='#'>Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class='container'>
+      <h1>Моноподы для сельфи</h1>
+
+      <ul class='breadcrumbs'>
+        <li>
+          <a href='#'>Главкая</a>
+        </li>
+        <li>
+          <a href='#'>Каталог товаров</a>
+        </li>
+        <li>
+          <a>Моноподы для сельфи</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class='container'>
+      <div class='content'>
+        <div class='catalog-title'>
+          <b>Сортировка:</b>
+          <div class='sort-types'>
+
+            <input checked id='sort-price' type='radio' name='sort-types' value='price'>
+            <label for='sort-price'>По цене</label>
+
+            <input checked id='sort-type' type='radio' name='sort-types' value='type'>
+            <label for='sort-type'>По типу</label>
+
+            <input checked id='sort-popularity' type='radio' name='sort-types' value='popularity'>
+            <label for='sort-popularity'>По популярности</label>
+
+          </div>
+          <div>
+            <a class='active'>up</a>
+            <a href="#">down</a>
+          </div>
+        </div>
+
+        <div class='catalog'>
+
+          <div class='catalog-item'>
+            <img src='http://placehold.it/360x380' width='360' height='380' alt='Любительская селфи-палка'/>
+            <b>Любительская селфи-палка</b>
+            <div>
+              500 руб.
+            </div>
+          </div>
+
+          <div class='catalog-item'>
+            <img src='http://placehold.it/360x380' width='360' height='380' alt='Любительская селфи-палка'/>
+            <b>Любительская селфи-палка</b>
+            <div>
+              500 руб.
+            </div>
+          </div>
+
+          <div class='catalog-item'>
+            <img src='http://placehold.it/360x380' width='360' height='380' alt='Любительская селфи-палка'/>
+            <b>Любительская селфи-палка</b>
+            <div>
+              500 руб.
+            </div>
+          </div>
+
+          <div class='catalog-item'>
+            <img src='http://placehold.it/360x380' width='360' height='380' alt='Любительская селфи-палка'/>
+            <b>Любительская селфи-палка</b>
+            <div>
+              500 руб.
+            </div>
+            <div class='catalog-item__new'>New</div>
+          </div>
+
+
+        </div>
+
+        <ul class='pager'>
+          <li class='prev'>
+            <a href='#'>Назад</a>
+          </li>
+
+          <li class='active'>
+            <a href='#'>1</a>
+          </li>
+          <li >
+            <a href='#'>2</a>
+          </li>
+          <li>
+            <a href='#'>3</a>
+          </li>
+
+          <li class='next'>
+            <a href='#'>Вперед</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class='filter'>
+        <div class='filter-title'>
+          Фильтр:
+        </div>
+        <div>
+          <form action='catalog.html' method='GET'>
+            <fieldset>
+                <legend>Стоимость</legend>
+                <label for='min'>От</label>
+                <input name='min' id='min' type="range" min="0" max="100000" value="100">
+
+                <label for='max'>До</label>
+                <input name='max' id='max' type="range" min="0" max="100000" value="100">
+            </fieldset>
+
+            <fieldset>
+              <legend>Цвет</legend>
+
+              <input type='checkbox' checked id='black' name='black' />
+              <label for='black'>Черный</label>
+
+              <input type='checkbox' id='white' name='white' />
+              <label for='white'>Белый</label>
+
+              <input type='checkbox' checked id='blue' name='blue' />
+              <label for='blue'>Синий</label>
+
+              <input type='checkbox' checked id='red' name='red' />
+              <label for='red'>Красный</label>
+
+              <input type='checkbox' id='pink' name='pink' />
+              <label for='pink'>Розовый</label>
+
+
+            </fieldset>
+
+            <fieldset>
+              <legend>Bluetooth</legend>
+
+              <input checked type='radio' id='bluetooth-yes' value='yes' name='bluetooth' />
+              <label for='bluetooth-yes'>Есть</label>
+
+              <input type='radio' id='bluetooth-no' value='no' name='bluetooth' />
+              <label for='bluetooth-no'>Нет</label>
+
+            </fieldset>
+
+            <button type='submit'>Покозать</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class='footer'>
+      <div class='container'>
+        <div>
+          <img width='200' height='60' alt='DEVICE'/>
+        </div>
+
+        <div>
+          <ul>
+            <li><a href='#'>Войти</a></li>
+            <li><a href='#'>Сравнить</a></li>
+            <li><a href='#'>Корзина</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div>
+            Тел.: +7 (495) 495-95-95
+          </div>
+
+          <ul>
+            <li><a href='#'>Доставка</a></li>
+            <li><a href='#'>Гарантия</a></li>
+            <li><a href='#'>Контакты</a></li>
+          </ul>
+
+          <div>
+            г. Москва, ул. Строителей, 15
+          </div>
+        </div>
+
+        <div>
+          <hr />
+
+          <div class='share'>
+            <a class="social social-vk" href="http://vk.com/htmlacademy">vk</a>
+            <a class="social social-fb" href="http://www.facebook.com/htmlacademy">fb</a>
+            <a class="social social-tw" href="http://twitter.com/htmlacademy_ru">tw</a>
+          </div>
+
+          <img src='' alt='htmlacademy' />
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

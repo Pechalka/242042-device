@@ -8,41 +8,50 @@
   <body>
     <div class='container'>
       <div class='header'>
-      <a href='#' class='logo'>
-        <img width='200' height='60' alt='logo'/>
-      </a>
+        <a href='#' class='logo'>
+          <img width='200' height='60' alt='logo'/>
+        </a>
 
-      <div class='user-menu'>
-        <div>
-          <input placeholder='Поиск по сайту' />
+        <div class='user-menu'>
+          <div>
+            <form>
+              <input name='q' type='text' placeholder='Поиск по сайту' />
+            </form>
+          </div>
+          <div>
+            <a href='#'>Войти</a>
+          </div>
+          <div>
+            <a href='#'>Сравнить</a>
+            <a href='#'>Корзина</a>
+          </div>
         </div>
-        <div>
-          <a href='#'>Войти</a>
-        </div>
-        <div>
-          <a href='#'>Сравнить</a>
-          <a href='#'>Корзина</a>
-        </div>
-      </div>
 
-      <div>
-        <ul class='top-menu'>
-          <li>
-            <a href='#'>Каталог товаров</a>
-            <ul>
-              <li><a href='#'>Вертуальная реальность</a></li>
-              <li><a href='#'>Фитнесс-браслеты</a></li>
-              <li><a href='#'>Квадракоптеры</a></li>
-              <li><a href='#'>Моноподы для сельфи</a></li>
-              <li><a href='#'>Умные часы</a></li>
-              <li><a href='#'>Экшен-камеры</a></li>
-            </ul>
-          </li>
-          <li><a href='#'>Доставка</a></li>
-          <li><a href='#'>Гарантия</a></li>
-          <li><a href='#'>Контакты</a></li>
-        </ul>
-      </div>
+        <div>
+          <ul class='top-menu'>
+            <li>
+              <a href='#'>Каталог товаров</a>
+              <div>
+                <ul>
+                  <li><a href='#'>Вертуальная реальность</a></li>
+                  <li><a href='#'>Фитнесс-браслеты</a></li>
+                  <li><a href='#'>Квадракоптеры</a></li>
+                </ul>
+                <ul>
+                  <li><a href='#'>Фитнесс-браслеты</a></li>
+                  <li><a href='#'>Умные часы</a></li>
+                </ul>
+                <ul>
+                  <li><a href='#'>Квадракоптеры</a></li>
+                </ul>
+              </div>
+
+            </li>
+            <li><a href='#'>Доставка</a></li>
+            <li><a href='#'>Гарантия</a></li>
+            <li><a href='#'>Контакты</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -167,7 +176,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class='delivery'>
           <h2>Доставка</h2>
           <p>
           Мы с удовольствием доставим ваш товар прямо к вашему<br/>
@@ -175,14 +184,44 @@
           заработаем, поднимая его на ваш этаж.
           </p>
         </div>
+
+        <div class='guarantee'>
+          <h2>Гарантия</h2>
+          <p>
+            Если из-за возгарания купленного у нас товара у вас сгорит дом —<br/>
+            не переживайте, мы выдадим вам новый.<br/>
+            Товар, не дом, конечно же.
+          </p>
+        </div>
+
+        <div class='credit'>
+          <h2>Кредит</h2>
+          <p>
+            Залезть в долговую яму стало проще! Кредитные консультанты<br/>
+            подберут для вас наиболее выгодные<br/>
+            условия кредита. Выгодные для нашего банка, разумеется.
+          </p>
+        </div>
       </div>
     </div>
 
     <div class='logos container'>
-      <img src='dji' alt='dji' />
-      <img src='spgadgets' alt='spgadgets' />
-      <img src='gopro' alt='gopro' />
-      <img src='vive' alt='vive' />
+      <a href='#'>
+        <img src='dji' alt='dji' />
+      </a>
+
+      <a href='#'>
+        <img src='spgadgets' alt='spgadgets' />
+      </a>
+
+      <a href='#'>
+        <img src='gopro' alt='gopro' />
+      </a>
+
+      <a href='#'>
+        <img src='vive' alt='vive' />
+      </a>
+
     </div>
 
     <div class='container info-contacts'>
@@ -259,6 +298,37 @@
       </div>
     </div>
 
-    <script type='text/javascript' src='js/script.js'></script>
+    <div class='modal'>
+      <button class='modal-close'>x</button>
+      <div class='modal-content'>
+        <form>
+
+          <div class='clearfix'>
+            <div class='col-xs-6'>
+              <label for='name'>Ваше имя:</label>
+              <input type='text' name='name' id='name' placeholder='Представьтесь, пожалуйста'/>
+            </div>
+
+            <div class='col-xs-6'>
+              <label for='email'>Ваше e-mail:</label>
+              <input type='email' name='email' id='email' placeholder='Для отправки ответа'/>
+            </div>
+          </div>
+
+          <label for='message'>Текст письма:</label>
+          <textarea id='message' name='message'>В свободной форме</textarea>
+
+          <button class='btn' type='submit'>Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class='modal'>
+      <button class='modal-close'>x</button>
+      <div class='modal-map'>
+      </div>
+    </div>
+
+
   </body>
 </html>

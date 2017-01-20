@@ -135,3 +135,26 @@
   background-color: #464646;
   color: #fff;
 }
+
+
+
+.content {
+  background-color: red;
+  float: right;
+  width: 70%;
+}
+
+.filter {
+  background-color: green;
+  float: left;
+  width: 30%;
+}
+
+
+.container:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+
