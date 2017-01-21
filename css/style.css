@@ -42,6 +42,7 @@
   opacity: 0.7;
 }
 
+
 .container {
   margin: 0 auto;
   width: 1160px;
@@ -68,6 +69,7 @@
   justify-content: space-between;
 }
 
+
 .top-menu {
   display: flex;
   justify-content: space-between;
@@ -79,8 +81,6 @@
 }
 
 
-
-
 .slide {
   display: none;
 }
@@ -88,7 +88,6 @@
 .slide--active {
   display: block;
 }
-
 
 
 .popular {
@@ -107,7 +106,6 @@
 }
 
 
-
 .service {
   background-color: #e5e5e5;
 }
@@ -115,8 +113,6 @@
 .service .container {
   display: flex;
 }
-
-
 
 
 .logos {
@@ -137,12 +133,12 @@
 }
 
 
-
 .content {
   background-color: red;
   float: right;
   width: 70%;
 }
+
 
 .filter {
   background-color: green;
