@@ -14,7 +14,7 @@
 
         <div class='user-menu'>
           <div>
-            <form>
+            <form action='catalog.html'>
               <input name='query' type='text' placeholder='Поиск по сайту' />
             </form>
           </div>
@@ -31,6 +31,7 @@
           <ul class='top-menu'>
             <li>
               <a href='#'>Каталог товаров</a>
+
               <div>
                 <ul>
                   <li><a href='#'>Вертуальная реальность</a></li>
@@ -45,7 +46,6 @@
                   <li><a href='#'>Квадракоптеры</a></li>
                 </ul>
               </div>
-
             </li>
             <li><a href='#'>Доставка</a></li>
             <li><a href='#'>Гарантия</a></li>
@@ -69,15 +69,14 @@
           <a>Моноподы для сельфи</a>
         </li>
       </ul>
-
     </div>
 
     <div class='container'>
       <div class='content'>
         <div class='catalog-title'>
           <b>Сортировка:</b>
-          <div class='sort-types'>
 
+          <div class='sort-types'>
             <input checked id='sort-price' type='radio' name='sort-types' value='price'>
             <label for='sort-price'>По цене</label>
 
@@ -86,8 +85,8 @@
 
             <input checked id='sort-popularity' type='radio' name='sort-types' value='popularity'>
             <label for='sort-popularity'>По популярности</label>
-
           </div>
+
           <div>
             <a class='active'>up</a>
             <a href="#">down</a>
@@ -95,7 +94,6 @@
         </div>
 
         <div class='catalog'>
-
           <div class='catalog-item'>
             <img src='http://placehold.it/360x380' width='360' height='380' alt='Любительская селфи-палка'/>
             <b>Любительская селфи-палка</b>
@@ -128,14 +126,12 @@
             </div>
             <div class='catalog-item__new'>New</div>
           </div>
-
         </div>
 
         <ul class='pager'>
           <li class='prev'>
             <a href='#'>Назад</a>
           </li>
-
           <li class='active'>
             <a href='#'>1</a>
           </li>
@@ -145,7 +141,6 @@
           <li>
             <a href='#'>3</a>
           </li>
-
           <li class='next'>
             <a href='#'>Вперед</a>
           </li>
@@ -157,6 +152,7 @@
         <div class='filter-title'>
           Фильтр:
         </div>
+
         <div>
           <form action='catalog.html' method='GET'>
             <fieldset>
@@ -166,7 +162,6 @@
 
                 <label for='max'>До</label>
                 <input name='max' id='max' type="range" min="0" max="100000" value="100">
-
             </fieldset>
 
             <fieldset>
@@ -186,7 +181,6 @@
 
               <input type='checkbox' id='pink' name='pink' />
               <label for='pink'>Розовый</label>
-
             </fieldset>
 
             <fieldset>
@@ -197,7 +191,6 @@
 
               <input type='radio' id='bluetooth-no' value='no' name='bluetooth' />
               <label for='bluetooth-no'>Нет</label>
-
             </fieldset>
 
             <button type='submit'>Показать</button>
@@ -238,7 +231,6 @@
         </div>
 
         <div>
-
           <div class='share'>
             <a class="social social-vkontakte" href="http://vk.com/htmlacademy">vk</a>
             <a class="social social-facebook" href="http://www.facebook.com/htmlacademy">fb</a>

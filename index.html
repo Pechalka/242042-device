@@ -31,6 +31,7 @@
           <ul class='top-menu'>
             <li>
               <a href='#'>Каталог товаров</a>
+
               <div>
                 <ul>
                   <li><a href='#'>Вертуальная реальность</a></li>
@@ -45,7 +46,6 @@
                   <li><a href='#'>Квадракоптеры</a></li>
                 </ul>
               </div>
-
             </li>
             <li><a href='#'>Доставка</a></li>
             <li><a href='#'>Гарантия</a></li>
@@ -56,7 +56,6 @@
     </div>
 
     <div class='slider container'>
-
       <div>
         <a href='#'>*</a>
         <a href='#'>*</a>
@@ -65,7 +64,9 @@
 
       <div class='slide'>
         <span>01</span>
-        <img src='slide1' alt='Фитнесс-браслеты'>
+        <div>
+          <img src='slide1' alt='Фитнесс-браслеты'>
+        </div>
         <h2>Делай селфи, как Бен Стиллер!</h2>
         <p>
           Самая длинная палка для селфи доступна в нашем магазине.
@@ -119,44 +120,48 @@
           <span>Радиус поражения</span>
         </div>
       </div>
-
     </div>
 
     <div class='popular container'>
       <div class='popular__item'>
         <a href='#'>
           <img src='http://placehold.it/160x160' width='160' height='160' alt='Виртуальная реальность'/>
-          <h2>Виртуальная реальность</h2>
+          <span>Виртуальная реальность</span>
         </a>
       </div>
+
       <div class='popular__item'>
         <a href='#'>
           <img src='http://placehold.it/160x160' width='160' height='160' alt='Моноподы для селфи'/>
-          <h2>Моноподы для селфи</h2>
+          <span>Моноподы для селфи</span>
         </a>
       </div>
+
       <div class='popular__item'>
         <a href='#'>
           <img src='http://placehold.it/160x160' width='160' height='160' alt='Экшн-камеры'/>
-          <h2>Экшн-камеры</h2>
+          <span>Экшн-камеры</span>
         </a>
       </div>
+
       <div class='popular__item'>
         <a href='#'>
           <img src='http://placehold.it/160x160' width='160' height='160' alt='Фитнесс браслеты'/>
-          <h2>Фитнесс браслеты</h2>
+          <span>Фитнесс браслеты</span>
         </a>
       </div>
+
       <div class='popular__item'>
         <a href='#'>
           <img src='http://placehold.it/160x160' width='160' height='160' alt='Умные часы'/>
-          <h2>Умные часы</h2>
+          <span>Умные часы</span>
         </a>
       </div>
+
       <div class='popular__item'>
         <a href='#'>
           <img src='http://placehold.it/160x160' width='160' height='160' alt='Квадрокоптеры'/>
-          <h2>Квадрокоптеры</h2>
+          <span>Квадрокоптеры</span>
         </a>
       </div>
     </div>
@@ -220,36 +225,43 @@
       <a href='#'>
         <img src='http://placehold.it/300x80' width='300' height='80'  alt='vive' />
       </a>
-
     </div>
 
     <div class='container info-contacts'>
       <div class='info'>
         <h2>О нас</h2>
+
         <p>
           Огромный выбор гаджетов не оставит равнодушным гика,<br/>
           который есть в каждом из нас.
         </p>
+
         <p>
           Мы можем доставить ваш товар в самые отдаленные точки<br/>
           России! <span>Device</span> работает со многими транспортными компаниями:
         </p>
+
         <ul>
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
+
         <a class='btn' href='#'>Подробнее о нас</a>
       </div>
+
       <div class='contacts'>
         <h2>Контакты</h2>
+
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br/>
           проверить работоспособность покупки. Всякое бывает.
         </p>
+
         <div>
           <img src='http://placehold.it/560x220' width='560' height='220' alt='map'/>
         </div>
+
         <a class='btn' href='#'>Напишите нам</a>
       </div>
     </div>
@@ -285,14 +297,15 @@
         </div>
 
         <div>
-
           <div class='share'>
             <a class="social social-vkontakte" href="http://vk.com/htmlacademy">vk</a>
             <a class="social social-facebook" href="http://www.facebook.com/htmlacademy">fb</a>
             <a class="social social-twitter" href="http://twitter.com/htmlacademy_ru">tw</a>
           </div>
 
-          <img src='http://placehold.it/30x40' width='30' height='40' alt='htmlacademy' />
+          <div>
+            <img src='http://placehold.it/30x40' width='30' height='40' alt='htmlacademy' />
+          </div>
         </div>
       </div>
     </div>
@@ -300,17 +313,16 @@
     <div class='modal'>
       <button class='modal-close'>x</button>
       <div class='modal-content'>
-        <form>
-
+        <form action='index.html'>
           <div class='clearfix'>
             <div class='col-xs-6'>
               <label for='name'>Ваше имя:</label>
-              <input type='text' name='name' id='name' placeholder='Представьтесь, пожалуйста'/>
+              <input placeholder='Представьтесь, пожалуйста' type='text' name='name' id='name' />
             </div>
 
             <div class='col-xs-6'>
               <label for='email'>Ваше e-mail:</label>
-              <input type='email' name='email' id='email' placeholder='Для отправки ответа'/>
+              <input placeholder='Для отправки ответа' type='email' name='email' id='email' />
             </div>
           </div>
 
@@ -327,7 +339,5 @@
       <div class='modal-map'>
       </div>
     </div>
-
-
   </body>
 </html>
