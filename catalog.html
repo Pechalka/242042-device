@@ -8,8 +8,8 @@
   <body>
     <div class='container'>
       <div class='header'>
-        <a href='#' class='logo'>
-          <img src='http://placehold.it/200x60' width='200' height='60' alt='logo'/>
+        <a href='/' class='logo'>
+          <img src='img/logo.png' width='200' height='60' alt='logo'/>
         </a>
 
         <div class='user-menu'>
@@ -22,15 +22,15 @@
             <a href='#'>Войти</a>
           </div>
           <div>
-            <a href='#'>Сравнить</a>
-            <a href='#'>Корзина</a>
+            <a class='user-menu__compare' href='#'>Сравнить</a>
+            <a class='user-menu__cart' href='#'>Корзина</a>
           </div>
         </div>
 
         <div>
           <ul class='top-menu'>
             <li>
-              <a href='#'>Каталог товаров</a>
+              <a class='top-menu__catalog-link' href='catalog.html'>Каталог товаров</a>
 
               <div>
                 <ul>
@@ -56,112 +56,41 @@
     </div>
 
     <div class='container'>
-      <h1>Моноподы для сельфи</h1>
+      <div class='page-title'>
+        <h1 class='page-title__title'>Моноподы для сельфи</h1>
 
-      <ul class='breadcrumbs'>
-        <li>
-          <a href='#'>Главкая</a>
-        </li>
-        <li>
-          <a href='#'>Каталог товаров</a>
-        </li>
-        <li>
-          <a>Моноподы для сельфи</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class='container'>
-      <div class='content'>
-        <div class='catalog-title'>
-          <b>Сортировка:</b>
-
-          <div class='sort-types'>
-            <input checked id='sort-price' type='radio' name='sort-types' value='price'>
-            <label for='sort-price'>По цене</label>
-
-            <input checked id='sort-type' type='radio' name='sort-types' value='type'>
-            <label for='sort-type'>По типу</label>
-
-            <input checked id='sort-popularity' type='radio' name='sort-types' value='popularity'>
-            <label for='sort-popularity'>По популярности</label>
-          </div>
-
-          <div>
-            <a class='active'>up</a>
-            <a href="#">down</a>
-          </div>
-        </div>
-
-        <div class='catalog'>
-          <div class='catalog-item'>
-            <img src='http://placehold.it/360x380' width='360' height='380' alt='Любительская селфи-палка'/>
-            <b>Любительская селфи-палка</b>
-            <div>
-              500 руб.
-            </div>
-          </div>
-
-          <div class='catalog-item'>
-            <img src='http://placehold.it/360x380' width='360' height='380' alt='Любительская селфи-палка'/>
-            <b>Любительская селфи-палка</b>
-            <div>
-              500 руб.
-            </div>
-          </div>
-
-          <div class='catalog-item'>
-            <img src='http://placehold.it/360x380' width='360' height='380' alt='Любительская селфи-палка'/>
-            <b>Любительская селфи-палка</b>
-            <div>
-              500 руб.
-            </div>
-          </div>
-
-          <div class='catalog-item'>
-            <img src='http://placehold.it/360x380' width='360' height='380' alt='Любительская селфи-палка'/>
-            <b>Любительская селфи-палка</b>
-            <div>
-              500 руб.
-            </div>
-            <div class='catalog-item__new'>New</div>
-          </div>
-        </div>
-
-        <ul class='pager'>
-          <li class='prev'>
-            <a href='#'>Назад</a>
-          </li>
-          <li class='active'>
-            <a href='#'>1</a>
-          </li>
-          <li >
-            <a href='#'>2</a>
+        <ul class='breadcrumbs'>
+          <li>
+            <a href='#'>Главкая</a>
           </li>
           <li>
-            <a href='#'>3</a>
+            <a href='#'>Каталог товаров</a>
           </li>
-          <li class='next'>
-            <a href='#'>Вперед</a>
+          <li>
+            <a>Моноподы для сельфи</a>
           </li>
         </ul>
-
       </div>
+    </div>
 
-      <div class='filter'>
-        <div class='filter-title'>
-          Фильтр:
-        </div>
 
-        <div>
+    <div class='catalog'>
+      <div class='catalog__filter-wrapper'>
+        <div class='catalog__filter-title'>Фильтр:</div>
+        <div class='catalog__filter'>
           <form action='catalog.html' method='GET'>
             <fieldset>
                 <legend>Стоимость</legend>
-                <label for='min'>От</label>
-                <input name='min' id='min' type="range" min="0" max="100000" value="100">
 
-                <label for='max'>До</label>
-                <input name='max' id='max' type="range" min="0" max="100000" value="100">
+                <div class="range">
+                  <button class="range_left">
+                    <span>от 50</span>
+                  </button>
+                  <button class="range_right">
+                    <span>до 5000</span>
+                  </button>
+                  <div class="range_field"></div>
+                </div>
             </fieldset>
 
             <fieldset>
@@ -193,33 +122,115 @@
               <label for='bluetooth-no'>Нет</label>
             </fieldset>
 
-            <button type='submit'>Показать</button>
+            <button class='btn btn--block' type='submit'>Показать</button>
           </form>
+        </div>
+      </div>
+      <div class='catalog__content-wrapper'>
+        <div class='catalog__content-title'>
+          <div class='catalog-sort'>
+            <b class='catalog-sort__label'>Сортировка:</b>
+
+            <div class='catalog-sort__types'>
+              <a class='active'>По цене</a>
+
+              <a href='#'>По типу</a>
+
+              <a href='#'>По популярности</a>
+            </div>
+
+            <div class='catalog-sort__direction'>
+              <a class='catalog-sort__asc active'>up</a>
+              <a class='catalog-sort__desc' href="#">down</a>
+            </div>
+          </div>
+        </div>
+        <div class='catalog__content'>
+          <div class='products'>
+            <div class='products__img-wrapper'>
+              <div class='products__img-wrapper'>
+                <img src='img/product1.jpg' width='360' height='380' alt='Любительская селфи-палка'/>
+              </div>
+              <b class='products__title'>Любительская селфи-палка</b>
+              <div class='products__price'>
+                500 руб.
+              </div>
+            </div>
+
+            <div class='products__item'>
+              <div class='products__img-wrapper'>
+                <img src='img/product2.jpg' width='360' height='380' alt='Любительская селфи-палка'/>
+              </div>
+              <b class='products__title'>Любительская селфи-палка</b>
+              <div class='products__price'>
+                500 руб.
+              </div>
+            </div>
+
+            <div class='products__item'>
+              <div class='products__img-wrapper'>
+                <img src='img/product3.jpg' width='360' height='380' alt='Любительская селфи-палка'/>
+              </div>
+              <b class='products__title'>Любительская селфи-палка</b>
+              <div class='products__price'>
+                500 руб.
+              </div>
+            </div>
+
+            <div class='products__item products__item--new'>
+              <div class='products__img-wrapper'>
+                <img src='img/product4.jpg' width='360' height='380' alt='Любительская селфи-палка'/>
+              </div>
+              <b class='products__title'>Любительская селфи-палка</b>
+              <div class='products__price'>
+                500 руб.
+              </div>
+            </div>
+          </div>
+
+          <div class='pager'>
+            <a class='pager__prev' href='#'>Назад</a>
+
+            <ul>
+              <li class='active'>
+                <a>1</a>
+              </li>
+              <li >
+                <a href='#'>2</a>
+              </li>
+              <li>
+                <a href='#'>3</a>
+              </li>
+            </ul>
+
+            <a class='pager__next' href='#'>Вперед</a>
+          </div>
         </div>
       </div>
     </div>
 
-
     <div class='footer'>
       <div class='container'>
-        <div>
-          <img src='http://placehold.it/200x60' width='200' height='60' alt='DEVICE'/>
+        <div class='footer-line1'>
+          <div>
+            <img src='img/logo-yellow.png' width='200' height='60' alt='DEVICE'/>
+          </div>
+
+          <div>
+            <ul class='footer-user-menu'>
+              <li><a href='#'>Войти</a></li>
+              <li><a href='#'>Сравнить</a></li>
+              <li><a href='#'>Корзина</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div>
-          <ul>
-            <li><a href='#'>Войти</a></li>
-            <li><a href='#'>Сравнить</a></li>
-            <li><a href='#'>Корзина</a></li>
-          </ul>
-        </div>
-
-        <div>
+        <div class='footer-line2'>
           <div>
             Тел.: +7 (495) 495-95-95
           </div>
 
-          <ul>
+          <ul class='footer-menu'>
             <li><a href='#'>Доставка</a></li>
             <li><a href='#'>Гарантия</a></li>
             <li><a href='#'>Контакты</a></li>
@@ -230,18 +241,16 @@
           </div>
         </div>
 
-        <div>
+        <div class='footer-line3'>
           <div class='share'>
-            <a class="social social-vkontakte" href="http://vk.com/htmlacademy">vk</a>
+            <a class="social social-facebook" href="http://vk.com/htmlacademy">vk</a>
             <a class="social social-facebook" href="http://www.facebook.com/htmlacademy">fb</a>
             <a class="social social-twitter" href="http://twitter.com/htmlacademy_ru">tw</a>
           </div>
 
-          <img src='http://placehold.it/30x40' width='30' height='40' alt='htmlacademy' />
+          <img src='img/htmlacademy.png' width='30' height='40' alt='htmlacademy' />
         </div>
       </div>
     </div>
-
-
   </body>
 </html>

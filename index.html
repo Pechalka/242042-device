@@ -7,14 +7,14 @@
   </head>
   <body>
     <div class='container'>
-      <div class='header'>
-        <a href='#' class='logo'>
-          <img src='http://placehold.it/200x60' width='200' height='60' alt='logo'/>
+      <div class='header header--home-page'>
+        <a href='/' class='logo'>
+          <img src='img/logo.png' width='200' height='60' alt='logo'/>
         </a>
 
         <div class='user-menu'>
           <div>
-            <form>
+            <form action='catalog.html'>
               <input name='query' type='text' placeholder='Поиск по сайту' />
             </form>
           </div>
@@ -22,15 +22,15 @@
             <a href='#'>Войти</a>
           </div>
           <div>
-            <a href='#'>Сравнить</a>
-            <a href='#'>Корзина</a>
+            <a class='user-menu__compare' href='#'>Сравнить</a>
+            <a class='user-menu__cart' href='#'>Корзина</a>
           </div>
         </div>
 
         <div>
           <ul class='top-menu'>
             <li>
-              <a href='#'>Каталог товаров</a>
+              <a class='top-menu__catalog-link' href='catalog.html'>Каталог товаров</a>
 
               <div>
                 <ul>
@@ -56,112 +56,122 @@
     </div>
 
     <div class='slider container'>
-      <div>
+      <div class='slider__nav'>
         <a href='#'>*</a>
-        <a href='#'>*</a>
+        <a class='active'>*</a>
         <a href='#'>*</a>
       </div>
 
       <div class='slide'>
-        <span>01</span>
-        <div>
-          <img src='slide1' alt='Фитнесс-браслеты'>
+        <div class='slide__wrapper'>
+          <img src='img/slide1.png' alt='Фитнесс-браслеты'>
         </div>
-        <h2>Делай селфи, как Бен Стиллер!</h2>
-        <p>
-          Самая длинная палка для селфи доступна в нашем магазине.
-          Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-        </p>
-        <a href='#' class='btn'>Подробней</a>
-        <div>
-          <span>8,5 м</span>
-          <span>Длина палки</span>
-        </div>
-        <div>
-          <span>5 кг</span>
-          <span>Вес палки</span>
-        </div>
-        <div>
-          <span>Карбон</span>
-          <span>Материал</span>
+        <div class='slide__content'>
+          <span class='slider__number'>01</span>
+          <h2>Делай селфи, как Бен Стиллер!</h2>
+          <p>
+            Самая длинная палка для селфи доступна в нашем магазине.
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+          <a href='#' class='btn'>Подробней</a>
+          <div>
+            <span>8,5 м</span>
+            <span>Длина палки</span>
+          </div>
+          <div>
+            <span>5 кг</span>
+            <span>Вес палки</span>
+          </div>
+          <div>
+            <span>Карбон</span>
+            <span>Материал</span>
+          </div>
         </div>
       </div>
 
       <div class='slide slide--active'>
-        <span>02</span>
-        <img src='slide1' alt='Фитнесс-браслеты'>
-        <h2>Худеем правильно!</h2>
-        <p>
-          Мотивирующие фитнесс-браслеты помогут найти в себе силы
-          не пропускать занятия и соблюдать диету.
-        </p>
-        <a href='#' class='btn'>Подробней</a>
-        <div>
-          <span>48 часов</span>
-          <span>Без подзарядки</span>
+        <div class='slide__wrapper'>
+          <img src='img/slide2.png' alt='Фитнесс-браслеты'>
+        </div>
+        <div class='slide__content'>
+          <span class='slider__number'>02</span>
+          <h2>Худеем<br /> правильно!</h2>
+          <p>
+            Мотивирующие фитнесс-браслеты помогут найти в себе силы
+            не пропускать занятия и соблюдать диету.
+          </p>
+          <a href='#' class='btn'>Подробней</a>
+          <div>
+            <span>48 часов</span>
+            <span>Без подзарядки</span>
+          </div>
         </div>
       </div>
 
       <div class='slide'>
-        <span>03</span>
-        <img src='slide1' alt='Фитнесс-браслеты'>
-        <h2>Порхает как бабочка, жалит как пчела!</h2>
-        <p>
-          Этот обычный, на первый взгляд, квадрокоптер оснащен
-          мощным лазером, замаскированным под стандартную камеру.
-        </p>
-        <a  href='#' class='btn'>Подробней</a>
-        <div>
-          <span>800 м</span>
-          <span>Дальность полета</span>
+        <div class='slide__wrapper'>
+          <img src='img/slide3.png' alt='Фитнесс-браслеты'>
         </div>
-        <div>
-          <span>50 м</span>
-          <span>Радиус поражения</span>
+        <div class='slide__content'>
+          <span class='slider__number'>03</span>
+          <h2>Порхает как бабочка, жалит как пчела!</h2>
+          <p>
+            Этот обычный, на первый взгляд, квадрокоптер оснащен
+            мощным лазером, замаскированным под стандартную камеру.
+          </p>
+          <a  href='#' class='btn'>Подробней</a>
+          <div>
+            <span>800 м</span>
+            <span>Дальность полета</span>
+          </div>
+          <div>
+            <span>50 м</span>
+            <span>Радиус поражения</span>
+          </div>
         </div>
       </div>
     </div>
 
     <div class='popular container'>
       <div class='popular__item'>
-        <a href='#'>
-          <img src='http://placehold.it/160x160' width='160' height='160' alt='Виртуальная реальность'/>
-          <span>Виртуальная реальность</span>
+        <a href='catalog.html'>
+          <img src='img/glasses.png' width='160' height='160' alt='Виртуальная реальность'/>
+          <span class='popular_label'>Виртуальная реальность</span>
         </a>
       </div>
 
       <div class='popular__item'>
-        <a href='#'>
-          <img src='http://placehold.it/160x160' width='160' height='160' alt='Моноподы для селфи'/>
-          <span>Моноподы для селфи</span>
+        <a href='catalog.html'>
+          <img src='img/selfi.png' width='160' height='160' alt='Моноподы для селфи'/>
+          <span class='popular_label'>Моноподы для селфи</span>
         </a>
       </div>
 
       <div class='popular__item'>
-        <a href='#'>
-          <img src='http://placehold.it/160x160' width='160' height='160' alt='Экшн-камеры'/>
-          <span>Экшн-камеры</span>
+        <a href='catalog.html'>
+          <img src='img/camera.png' width='160' height='160' alt='Экшн-камеры'/>
+          <span class='popular_label'>Экшн-камеры</span>
         </a>
       </div>
 
       <div class='popular__item'>
-        <a href='#'>
-          <img src='http://placehold.it/160x160' width='160' height='160' alt='Фитнесс браслеты'/>
-          <span>Фитнесс браслеты</span>
+        <a href='catalog.html'>
+          <img src='img/braslet.png' width='160' height='160' alt='Фитнесс браслеты'/>
+          <span class='popular_label'>Фитнесс браслеты</span>
         </a>
       </div>
 
       <div class='popular__item'>
-        <a href='#'>
-          <img src='http://placehold.it/160x160' width='160' height='160' alt='Умные часы'/>
-          <span>Умные часы</span>
+        <a href='catalog.html'>
+          <img src='img/clock.png' width='160' height='160' alt='Умные часы'/>
+          <span class='popular_label'>Умные часы</span>
         </a>
       </div>
 
       <div class='popular__item'>
-        <a href='#'>
-          <img src='http://placehold.it/160x160' width='160' height='160' alt='Квадрокоптеры'/>
-          <span>Квадрокоптеры</span>
+        <a href='catalog.html'>
+          <img src='img/quadrocopter.png' width='160' height='160' alt='Квадрокоптеры'/>
+          <span class='popular_label'>Квадрокоптеры</span>
         </a>
       </div>
     </div>
@@ -180,16 +190,16 @@
           </li>
         </ul>
 
-        <div class='delivery'>
+        <div class='delivery service__content service__content--active'>
           <h2>Доставка</h2>
           <p>
-          Мы с удовольствием доставим ваш товар прямо к вашему
-          подъезду совершенно бесплатно! Ведь мы неплохо
-          заработаем, поднимая его на ваш этаж.
+            Мы с удовольствием доставим ваш товар прямо к вашему
+            подъезду совершенно бесплатно! Ведь мы неплохо
+            заработаем, поднимая его на ваш этаж.
           </p>
         </div>
 
-        <div class='guarantee'>
+        <div class='guarantee service__content'>
           <h2>Гарантия</h2>
           <p>
             Если из-за возгарания купленного у нас товара у вас сгорит дом —
@@ -198,7 +208,7 @@
           </p>
         </div>
 
-        <div class='credit'>
+        <div class='credit service__content'>
           <h2>Кредит</h2>
           <p>
             Залезть в долговую яму стало проще! Кредитные консультанты
@@ -211,19 +221,19 @@
 
     <div class='logos container'>
       <a href='#'>
-        <img src='http://placehold.it/300x80' width='300' height='80'  alt='dji' />
+        <img src='img/spangets.png' width='300' height='80'  alt='dji' />
       </a>
 
       <a href='#'>
-        <img src='http://placehold.it/300x80' width='300' height='80'  alt='spgadgets' />
+        <img src='img/dji.png' width='300' height='80'  alt='spgadgets' />
       </a>
 
       <a href='#'>
-        <img src='http://placehold.it/300x80' width='300' height='80'  alt='gopro' />
+        <img src='img/gopro.png' width='300' height='80'  alt='gopro' />
       </a>
 
       <a href='#'>
-        <img src='http://placehold.it/300x80' width='300' height='80'  alt='vive' />
+        <img src='img/vive.png' width='300' height='80'  alt='vive' />
       </a>
     </div>
 
@@ -258,8 +268,8 @@
           проверить работоспособность покупки. Всякое бывает.
         </p>
 
-        <div>
-          <img src='http://placehold.it/560x220' width='560' height='220' alt='map'/>
+        <div class='map'>
+          <img src='img/map.jpg' width='560' height='220' alt='map'/>
         </div>
 
         <a class='btn' href='#'>Напишите нам</a>
@@ -268,24 +278,26 @@
 
     <div class='footer'>
       <div class='container'>
-        <div>
-          <img src='http://placehold.it/200x60' width='200' height='60' alt='DEVICE'/>
+        <div class='footer-line1'>
+          <div>
+            <img src='img/logo-yellow.png' width='200' height='60' alt='DEVICE'/>
+          </div>
+
+          <div>
+            <ul class='footer-user-menu'>
+              <li><a href='#'>Войти</a></li>
+              <li><a href='#'>Сравнить</a></li>
+              <li><a href='#'>Корзина</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div>
-          <ul>
-            <li><a href='#'>Войти</a></li>
-            <li><a href='#'>Сравнить</a></li>
-            <li><a href='#'>Корзина</a></li>
-          </ul>
-        </div>
-
-        <div>
+        <div class='footer-line2'>
           <div>
             Тел.: +7 (495) 495-95-95
           </div>
 
-          <ul>
+          <ul class='footer-menu'>
             <li><a href='#'>Доставка</a></li>
             <li><a href='#'>Гарантия</a></li>
             <li><a href='#'>Контакты</a></li>
@@ -296,16 +308,14 @@
           </div>
         </div>
 
-        <div>
+        <div class='footer-line3'>
           <div class='share'>
-            <a class="social social-vkontakte" href="http://vk.com/htmlacademy">vk</a>
-            <a class="social social-facebook" href="http://www.facebook.com/htmlacademy">fb</a>
+            <a class="social social-facebook" href="http://vk.com/htmlacademy">vk</a>
+            <a class="social social-insta" href="http://www.facebook.com/htmlacademy">fb</a>
             <a class="social social-twitter" href="http://twitter.com/htmlacademy_ru">tw</a>
           </div>
 
-          <div>
-            <img src='http://placehold.it/30x40' width='30' height='40' alt='htmlacademy' />
-          </div>
+          <img src='img/htmlacademy.png' width='30' height='40' alt='htmlacademy' />
         </div>
       </div>
     </div>
