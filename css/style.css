@@ -448,8 +448,8 @@ body {
   float: left;
   width: calc(50% - 252px);
   background-color: #eee;
-  margin-bottom: -490px;
-  padding-bottom: 490px;
+  margin-bottom: -475px;
+  padding-bottom: 475px;
 }
 
 .catalog__filter-title {
@@ -680,7 +680,6 @@ body {
   padding-bottom: 55px;
 }
 
-
 .footer-line1 {
   display: flex;
   justify-content: space-between;
@@ -747,7 +746,6 @@ body {
   display: none;
 }
 
-
 /* -----------------------  modal  -----------------*/
 .social {
   width: 38px;
@@ -773,7 +771,6 @@ body {
   background: url(../img/icon-twiter.png);
 }
 
-
 /* -----------------------  fieldset  -----------------*/
 fieldset {
   border: none;
@@ -789,7 +786,6 @@ legend {
   font-family: gilroyextrabold;
 }
 
-
 /* -----------------------  checkbox + radio  -----------------*/
 input[type=checkbox],
 input[type='radio'] {
@@ -797,7 +793,6 @@ input[type='radio'] {
   position: absolute;
   opacity: 0;
 }
-
 
 input[type=checkbox] + label,
 input[type='radio'] + label {
@@ -809,8 +804,6 @@ input[type='radio'] + label {
   padding-left: 40px;
 }
 
-
-
 input[type=checkbox] + label:after {
   content: '';
   display: block;
@@ -821,7 +814,6 @@ input[type=checkbox] + label:after {
   left: 0;
   background-color: #dcdcdc;
 }
-
 
 input[type=checkbox] + label:before {
   display: none;
@@ -841,8 +833,6 @@ input[type=checkbox]:checked + label:before {
   display: block;
 }
 
-
-
 input[type=radio] + label:after {
   content: '';
   display: block;
@@ -855,7 +845,6 @@ input[type=radio] + label:after {
   border: 2px solid #dcdcdc;
   box-sizing: border-box;
 }
-
 
 input[type=radio] + label:before {
   display: none;
@@ -876,7 +865,6 @@ input[type=radio] + label:before {
 input[type=radio]:checked + label:before {
   display: block;
 }
-
 
 /* -----------------------  range  -----------------*/
 .range {
@@ -915,7 +903,6 @@ input[type=radio]:checked + label:before {
   left: 50px;
   right: 50px;
 }
-
 
 .range_left span,
 .range_right span {
