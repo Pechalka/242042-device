@@ -32,10 +32,6 @@
 }
 
 /* -----------------------  reset  -----------------*/
-* {
-  margin: 0;
-  padding: 0;
-}
 
 body {
   font-size: 18px;
@@ -63,6 +59,8 @@ body {
   line-height: 1.4;
   font-size: 18px;
   padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
@@ -87,12 +85,12 @@ body {
 
 .btn:hover:after,
 .btn:active:after {
-  top: 10px;
-  bottom: 10px;
+  top: 0;
+  bottom: 0;
 }
 
 .btn:active {
-  opacity: 0.7;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .btn.btn--block {
@@ -101,7 +99,7 @@ body {
 
 /* -----------------------  header  -----------------*/
 .header {
-  background-color: #f7e296;
+  background-color: #ffe27f;
   position: relative;
   margin-top: 40px;
   padding-left: 60px;
@@ -117,6 +115,11 @@ body {
 
 .header.header--home-page {
   padding-bottom: 160px;
+}
+
+.header ul {
+  padding: 0;
+  margin: 0;
 }
 
 /* -----------------------  .user-menu  -----------------*/
@@ -230,6 +233,7 @@ body {
   font-size: 47px;
   font-family: gilroyextrabold;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .slide__content p {
@@ -246,6 +250,8 @@ body {
 .breadcrumbs {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .breadcrumbs a {
@@ -255,6 +261,14 @@ body {
   font-size: 14px;
   line-height: 36px;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .breadcrumbs li {
@@ -278,6 +292,8 @@ body {
 .page-title {
   padding-left: 60px;
   padding-bottom: 40px;
+  color: #000;
+  font-family: gilroyextrabold;
 }
 
 .page-title__title {
@@ -483,9 +499,7 @@ body {
 
 .catalog__content-title {
   padding-left: 70px;
-  padding-top: 20px;
   padding-right: calc(100% - 830px);
-  padding-bottom: 20px;
   box-sizing: border-box;
   background-color: #ebebeb;
   height: 70px;
@@ -506,6 +520,8 @@ body {
 }
 
 .catalog-sort__label {
+  padding-bottom: 20px;
+  padding-top: 20px;
   float: left;
   font-size: 16px;
   line-height: 30px;
@@ -520,6 +536,8 @@ body {
 }
 
 .catalog-sort__types a {
+  padding-bottom: 20px;
+  padding-top: 20px;
   text-decoration: none;
   margin-right: 30px;
   display: inline-block;
@@ -527,6 +545,14 @@ body {
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
   font-family: opensans;
+}
+
+.catalog-sort__types a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-sort__types a:active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .catalog-sort__types a.active {
@@ -539,6 +565,8 @@ body {
 
 .catalog-sort__asc,
 .catalog-sort__desc {
+  padding-bottom: 20px;
+  padding-top: 20px;
   text-indent: -9999px;
   display: block;
   height: 20px;
@@ -556,7 +584,7 @@ body {
   content: '';
   display: block;
   position: absolute;
-  top: 10px;
+  top: 30px;
 }
 
 .catalog-sort__asc:after {
@@ -567,12 +595,28 @@ body {
   border-bottom: 10px solid rgba(0, 0, 0, 0.2);
 }
 
+.catalog-sort__asc:hover::after {
+  border-bottom: 10px solid rgba(0, 0, 0, 0.4);
+}
+
+.catalog-sort__asc:active::after {
+  border-bottom: 10px solid rgba(0, 0, 0, 1);
+}
+
 .catalog-sort__desc:after {
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid rgba(0, 0, 0, 0.2);
+}
+
+.catalog-sort__desc:hover::after {
+  border-top: 10px solid rgba(0, 0, 0, 0.4);
+}
+
+.catalog-sort__desc:active::after {
+  border-top: 10px solid rgba(0, 0, 0, 1);
 }
 
 .catalog-sort__desc.active:after  {
@@ -631,7 +675,46 @@ body {
 }
 
 .products__img-wrapper {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  display: block;
+}
+
+.products__actions {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  padding-top: 160px;
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: center;
+}
+
+.products__item:hover .products__actions {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: block;
+}
+
+.products__actions a {
+  display: block;
+}
+
+.products__actions .compare {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.products__actions .compare:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.products__actions .compare:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /* -----------------------  pager  -----------------*/
@@ -639,10 +722,6 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #ebebeb;
-  padding-left: 30px;
-  padding-top: 25px;
-  padding-right: 30px;
-  padding-bottom: 25px;
 }
 
 
@@ -657,12 +736,25 @@ body {
 .pager ul {
   list-style: none;
   display: flex;
+  margin: 0;
+  font-size: 0;
 }
 
 .pager ul a {
+  display: inline-block;
   margin-right: 20px;
   color: rgba(0, 0, 0, 0.3);
+  padding: 25px 20px;
 }
+
+.pager ul a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pager ul a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
 .pager ul .active a {
   color: #000;
 }
@@ -670,6 +762,17 @@ body {
 .pager__prev,
 .pager__next {
   text-transform: uppercase;
+  padding: 25px 30px;
+}
+
+.pager__prev:hover,
+.pager__next:hover {
+  background-color: #d9d9d9;
+}
+
+.pager__prev:active,
+.pager__next:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* -----------------------  footer  -----------------*/
@@ -746,7 +849,7 @@ body {
   display: none;
 }
 
-/* -----------------------  modal  -----------------*/
+/* -----------------------  social  -----------------*/
 .social {
   width: 38px;
   height: 38px;
@@ -776,6 +879,8 @@ fieldset {
   border: none;
   border-top: 2px solid #000;
   position: relative;
+  margin: 0;
+  padding:0;
   padding-top: 50px;
   padding-bottom: 40px;
 }
