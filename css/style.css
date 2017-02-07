@@ -136,6 +136,41 @@ body {
   line-height: 36px;
 }
 
+.user-menu form {
+  position: relative;
+}
+
+.user-menu button[type=submit] {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  border: 2px solid #000;
+  opacity: 0;
+  font-size: 15px;
+  line-height: 36px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.user-menu button[type=submit]:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.user-menu button[type=submit]:active {
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+}
+
+.user-menu input:focus + button[type=submit] {
+  opacity: 1;
+}
+
+.user-menu button[type=submit]:focus {
+  opacity: 1;
+}
+
 .user-menu input {
   background-color: transparent;
   border: none;
@@ -143,6 +178,15 @@ body {
   line-height: 36px;
   background: url(../img/icon-search.png) no-repeat 10px center;
   padding-left: 40px;
+  box-sizing: border-box;
+  width: 460px;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  padding-right: 100px;
+}
+
+.user-menu input:focus {
+  border-bottom: 2px solid #000;
 }
 
 .user-menu__compare {
@@ -318,6 +362,14 @@ body {
   background-color: #f7e296;
   width: 160px;
   height: 160px;
+}
+
+.popular__item:hover img {
+  background-color: #ffc600;
+}
+
+.popular__item:active {
+  opacity: 0.3;
 }
 
 .popular__item a {
@@ -666,6 +718,7 @@ body {
   font-family: gilroyextrabold;
   font-size: 18px;
   letter-spacing: 0.01em;
+  width: 260px;
 }
 
 .products__price {
