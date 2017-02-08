@@ -7,74 +7,75 @@
     <link rel='stylesheet' type='text/css' href='css/style.css'>
   </head>
   <body>
-    <div class='container'>
+    <div class="container">
       <div class='header'>
-        <a href='/' class='logo'>
+        <a href='index.html' class='header__logo'>
           <img src='img/logo.png' width='200' height='60' alt='logo'/>
         </a>
+        <div class='header__line'>
+          <form class="search" action='catalog.html'>
+            <input class='search__input' name='query' type='text' placeholder='Поиск по сайту' />
+            <button  class='search__button' type='submit'>Найти</button>
+          </form>
 
-        <div class='user-menu'>
-          <div>
-            <form action='catalog.html'>
-              <input name='query' type='text' placeholder='Поиск по сайту' />
-              <button type='submit'>Найти</button>
-            </form>
-          </div>
-          <div>
-            <a href='#'>Войти</a>
-          </div>
-          <div>
-            <a class='user-menu__compare' href='#'>Сравнить</a>
-            <a class='user-menu__cart' href='#'>Корзина</a>
+          <div class='user-block'>
+            <div class='user-block__user'>
+              <a class='user-block__link user-block__link--login' href='#'>Войти</a>
+<!--               <span class='user-block__user-name'>Валентин Петухов</span>
+              <a class='user-block__link user-block__link--exit' href='#'>Выйти</a> -->
+            </div>
+
+            <div class='user-block__links'>
+              <a class='user-block__link user-block__link--compare' href='#'>Сравнить</a>
+              <a class='user-block__link user-block__link--cart' href='#'>Корзина</a>
+            </div>
           </div>
         </div>
+        <div class='header__line'>
+          <div class='catalog-menu'>
+            <a class='catalog-menu__link'>Каталог</a>
+            <div class='catalog-menu__sub-menu'>
+              <ul>
+                <li><a href='#'>Вертуальная реальность</a></li>
+                <li><a href='#'>Фитнесс-браслеты</a></li>
+                <li><a href='#'>Квадракоптеры</a></li>
+              </ul>
+              <ul>
+                <li><a href='#'>Фитнесс-браслеты</a></li>
+                <li><a href='#'>Умные часы</a></li>
+              </ul>
+              <ul>
+                <li><a href='#'>Квадракоптеры</a></li>
+              </ul>
+            </div>
+          </div>
 
-        <div>
-          <ul class='top-menu'>
+          <nav class='top-menu'>
+            <a class='top-menu__link' href='#'>Доставка</a>
+            <a class='top-menu__link' href='#'>Гарантия</a>
+            <a class='top-menu__link top-menu__link--margin-auto' href='#'>Контакты</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class='container'>
+        <div class='page-title'>
+          <h1 class='page-title__title'>Моноподы для сельфи</h1>
+
+          <ul class='breadcrumbs'>
             <li>
-              <a class='top-menu__catalog-link' href='catalog.html'>Каталог товаров</a>
-
-              <div>
-                <ul>
-                  <li><a href='#'>Вертуальная реальность</a></li>
-                  <li><a href='#'>Фитнесс-браслеты</a></li>
-                  <li><a href='#'>Квадракоптеры</a></li>
-                </ul>
-                <ul>
-                  <li><a href='#'>Фитнесс-браслеты</a></li>
-                  <li><a href='#'>Умные часы</a></li>
-                </ul>
-                <ul>
-                  <li><a href='#'>Квадракоптеры</a></li>
-                </ul>
-              </div>
+              <a href='#'>Главкая</a>
             </li>
-            <li><a href='#'>Доставка</a></li>
-            <li><a href='#'>Гарантия</a></li>
-            <li><a href='#'>Контакты</a></li>
+            <li>
+              <a href='#'>Каталог товаров</a>
+            </li>
+            <li>
+              <a>Моноподы для сельфи</a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-
-    <div class='container'>
-      <div class='page-title'>
-        <h1 class='page-title__title'>Моноподы для сельфи</h1>
-
-        <ul class='breadcrumbs'>
-          <li>
-            <a href='#'>Главкая</a>
-          </li>
-          <li>
-            <a href='#'>Каталог товаров</a>
-          </li>
-          <li>
-            <a>Моноподы для сельфи</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
 
     <div class='catalog'>
       <div class='catalog__filter-wrapper'>
@@ -231,21 +232,25 @@
 
     <div class='footer'>
       <div class='container'>
-        <div class='footer-line1'>
-          <div>
+        <div class='footer__line'>
+          <a>
             <img src='img/logo-yellow.png' width='200' height='60' alt='DEVICE'/>
-          </div>
+          </a>
 
-          <div>
-            <ul class='footer-user-menu'>
-              <li><a href='#'>Войти</a></li>
-              <li><a href='#'>Сравнить</a></li>
-              <li><a href='#'>Корзина</a></li>
-            </ul>
-          </div>
+          <ul class='footer-user-menu'>
+            <li>
+              <a href='#'>Войти</a>
+            </li>
+            <li>
+              <a href='#'>Сравнить</a>
+            </li>
+            <li>
+              <a href='#'>Корзина</a>
+            </li>
+          </ul>
         </div>
 
-        <div class='footer-line2'>
+        <div class='footer__line'>
           <div>
             Тел.: +7 (495) 495-95-95
           </div>
@@ -261,14 +266,16 @@
           </div>
         </div>
 
-        <div class='footer-line3'>
-          <div class='share'>
-            <a class="social social-facebook" href="http://vk.com/htmlacademy">vk</a>
-            <a class="social social-facebook" href="http://www.facebook.com/htmlacademy">fb</a>
-            <a class="social social-twitter" href="http://twitter.com/htmlacademy_ru">tw</a>
-          </div>
+        <div class='footer__line'>
+          <div class='footer__hr'></div>
 
-          <img src='img/htmlacademy.png' width='30' height='40' alt='htmlacademy' />
+          <nav class='social'>
+            <a class="social__link social__link--facebook" href="http://vk.com/htmlacademy">vk</a>
+            <a class="social__link social__link--insta" href="http://www.facebook.com/htmlacademy">fb</a>
+            <a class="social__link social__link--twitter" href="http://twitter.com/htmlacademy_ru">tw</a>
+          </nav>
+
+          <a class='academy-link' href='htmlacademy.ru'>htmlacademy.ru</a>
         </div>
       </div>
     </div>

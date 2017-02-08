@@ -7,52 +7,54 @@
     <link rel='stylesheet' type='text/css' href='css/style.css'>
   </head>
   <body>
-    <div class='container'>
+    <div class="container">
       <div class='header header--home-page'>
-        <a class='logo'>
+        <a class='header__logo'>
           <img src='img/logo.png' width='200' height='60' alt='logo'/>
         </a>
+        <div class='header__line'>
+          <form class="search" action='catalog.html'>
+            <input class='search__input' name='query' type='text' placeholder='Поиск по сайту' />
+            <button  class='search__button' type='submit'>Найти</button>
+          </form>
 
-        <div class='user-menu'>
-          <div>
-            <form action='catalog.html'>
-              <input name='query' type='text' placeholder='Поиск по сайту' />
-              <button type='submit'>Найти</button>
-            </form>
-          </div>
-          <div>
-            <a href='#'>Войти</a>
-          </div>
-          <div>
-            <a class='user-menu__compare' href='#'>Сравнить</a>
-            <a class='user-menu__cart' href='#'>Корзина</a>
+          <div class='user-block'>
+            <div class='user-block__user'>
+              <a class='user-block__link user-block__link--login' href='#'>Войти</a>
+<!--               <span class='user-block__user-name'>Валентин Петухов</span>
+              <a class='user-block__link user-block__link--exit' href='#'>Выйти</a> -->
+            </div>
+
+            <div class='user-block__links'>
+              <a class='user-block__link user-block__link--compare' href='#'>Сравнить</a>
+              <a class='user-block__link user-block__link--cart' href='#'>Корзина</a>
+            </div>
           </div>
         </div>
+        <div class='header__line'>
+          <div class='catalog-menu'>
+            <a class='catalog-menu__link' href='catalog.html'>Каталог</a>
+            <div class='catalog-menu__sub-menu'>
+              <ul>
+                <li><a href='#'>Вертуальная реальность</a></li>
+                <li><a href='#'>Фитнесс-браслеты</a></li>
+                <li><a href='#'>Квадракоптеры</a></li>
+              </ul>
+              <ul>
+                <li><a href='#'>Фитнесс-браслеты</a></li>
+                <li><a href='#'>Умные часы</a></li>
+              </ul>
+              <ul>
+                <li><a href='#'>Квадракоптеры</a></li>
+              </ul>
+            </div>
+          </div>
 
-        <div>
-          <ul class='top-menu'>
-            <li>
-              <a class='top-menu__catalog-link' href='catalog.html'>Каталог товаров</a>
-
-              <div>
-                <ul>
-                  <li><a href='#'>Вертуальная реальность</a></li>
-                  <li><a href='#'>Фитнесс-браслеты</a></li>
-                  <li><a href='#'>Квадракоптеры</a></li>
-                </ul>
-                <ul>
-                  <li><a href='#'>Фитнесс-браслеты</a></li>
-                  <li><a href='#'>Умные часы</a></li>
-                </ul>
-                <ul>
-                  <li><a href='#'>Квадракоптеры</a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href='#'>Доставка</a></li>
-            <li><a href='#'>Гарантия</a></li>
-            <li><a href='#'>Контакты</a></li>
-          </ul>
+          <nav class='top-menu'>
+            <a class='top-menu__link' href='#'>Доставка</a>
+            <a class='top-menu__link' href='#'>Гарантия</a>
+            <a class='top-menu__link top-menu__link--margin-auto' href='#'>Контакты</a>
+          </nav>
         </div>
       </div>
     </div>
@@ -135,47 +137,71 @@
     </div>
 
     <div class='popular container'>
-      <div class='popular__item'>
-        <a href='catalog.html'>
-          <img src='img/glasses.png' width='160' height='160' alt='Виртуальная реальность'/>
-          <span class='popular_label'>Виртуальная реальность</span>
-        </a>
-      </div>
+      <a class='popular__item' href='catalog.html'>
+        <img
+          class='popular__img'
+          src='img/glasses.png'
+          width='160'
+          height='160'
+          alt='Виртуальная реальность'
+        />
+        <span class='popular_label'>Виртуальная реальность</span>
+      </a>
 
-      <div class='popular__item'>
-        <a href='catalog.html'>
-          <img src='img/selfi.png' width='160' height='160' alt='Моноподы для селфи'/>
-          <span class='popular_label'>Моноподы для селфи</span>
-        </a>
-      </div>
+      <a class='popular__item' href='catalog.html'>
+        <img
+          class='popular__img'
+          src='img/selfi.png'
+          width='160'
+          height='160'
+          alt='Моноподы для селфи'
+        />
+        <span class='popular_label'>Моноподы для селфи</span>
+      </a>
 
-      <div class='popular__item'>
-        <a href='catalog.html'>
-          <img src='img/camera.png' width='160' height='160' alt='Экшн-камеры'/>
-          <span class='popular_label'>Экшн-камеры</span>
-        </a>
-      </div>
+      <a class='popular__item' href='catalog.html'>
+        <img
+          class='popular__img'
+          src='img/camera.png'
+          width='160'
+          height='160'
+          alt='Экшн-камеры'
+        />
+        <span class='popular_label'>Экшн-камеры</span>
+      </a>
 
-      <div class='popular__item'>
-        <a href='catalog.html'>
-          <img src='img/braslet.png' width='160' height='160' alt='Фитнесс браслеты'/>
-          <span class='popular_label'>Фитнесс браслеты</span>
-        </a>
-      </div>
+      <a class='popular__item' href='catalog.html'>
+        <img
+          class='popular__img'
+          src='img/braslet.png'
+          width='160'
+          height='160'
+          alt='Фитнесс браслеты'
+        />
+        <span class='popular_label'>Фитнесс браслеты</span>
+      </a>
 
-      <div class='popular__item'>
-        <a href='catalog.html'>
-          <img src='img/clock.png' width='160' height='160' alt='Умные часы'/>
-          <span class='popular_label'>Умные часы</span>
-        </a>
-      </div>
+      <a class='popular__item' href='catalog.html'>
+        <img
+          class='popular__img'
+          src='img/clock.png'
+          width='160'
+          height='160'
+          alt='Умные часы'
+        />
+        <span class='popular_label'>Умные часы</span>
+      </a>
 
-      <div class='popular__item'>
-        <a href='catalog.html'>
-          <img src='img/quadrocopter.png' width='160' height='160' alt='Квадрокоптеры'/>
-          <span class='popular_label'>Квадрокоптеры</span>
-        </a>
-      </div>
+      <a class='popular__item' href='catalog.html'>
+        <img
+          class='popular__img'
+          src='img/quadrocopter.png'
+          width='160'
+          height='160'
+          alt='Квадрокоптеры'
+        />
+        <span class='popular_label'>Квадрокоптеры</span>
+      </a>
     </div>
 
     <div class='service'>
@@ -280,21 +306,25 @@
 
     <div class='footer'>
       <div class='container'>
-        <div class='footer-line1'>
-          <div>
+        <div class='footer__line'>
+          <a>
             <img src='img/logo-yellow.png' width='200' height='60' alt='DEVICE'/>
-          </div>
+          </a>
 
-          <div>
-            <ul class='footer-user-menu'>
-              <li><a href='#'>Войти</a></li>
-              <li><a href='#'>Сравнить</a></li>
-              <li><a href='#'>Корзина</a></li>
-            </ul>
-          </div>
+          <ul class='footer-user-menu'>
+            <li>
+              <a href='#'>Войти</a>
+            </li>
+            <li>
+              <a href='#'>Сравнить</a>
+            </li>
+            <li>
+              <a href='#'>Корзина</a>
+            </li>
+          </ul>
         </div>
 
-        <div class='footer-line2'>
+        <div class='footer__line'>
           <div>
             Тел.: +7 (495) 495-95-95
           </div>
@@ -310,14 +340,16 @@
           </div>
         </div>
 
-        <div class='footer-line3'>
-          <div class='share'>
-            <a class="social social-facebook" href="http://vk.com/htmlacademy">vk</a>
-            <a class="social social-insta" href="http://www.facebook.com/htmlacademy">fb</a>
-            <a class="social social-twitter" href="http://twitter.com/htmlacademy_ru">tw</a>
-          </div>
+        <div class='footer__line'>
+          <div class='footer__hr'></div>
 
-          <img src='img/htmlacademy.png' width='30' height='40' alt='htmlacademy' />
+          <nav class='social'>
+            <a class="social__link social__link--facebook" href="http://vk.com/htmlacademy">vk</a>
+            <a class="social__link social__link--insta" href="http://www.facebook.com/htmlacademy">fb</a>
+            <a class="social__link social__link--twitter" href="http://twitter.com/htmlacademy_ru">tw</a>
+          </nav>
+
+          <a class='academy-link' href='htmlacademy.ru'>htmlacademy.ru</a>
         </div>
       </div>
     </div>
