@@ -162,7 +162,7 @@ body {
   border: none;
   font-size: 15px;
   line-height: 36px;
-  background: url(../img/icon-search.png) no-repeat 10px center;
+  background: url(../img/icon-search.png) no-repeat left center;
   padding-left: 40px;
   box-sizing: border-box;
   width: 460px;
@@ -212,6 +212,7 @@ body {
   font-family: gilroyextrabold;
   height: 60px;
   line-height: 60px;
+  padding-right: 30px;
 }
 
 .catalog-menu__link:hover {
@@ -227,7 +228,7 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  right: -30px;
+  right: 0;
   top: calc(50% - 10px);
   background-color: red;
 }
@@ -303,6 +304,15 @@ body {
   position: relative;
 }
 
+.user-block__user-name::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 0;
+  width: 15px;
+  height: 15px;
+}
+
 .user-block__link {
   padding-left: 30px;
   position: relative;
@@ -342,6 +352,7 @@ body {
 .user-block__link--exit:active {
   color: rgba(0, 0, 0, 0.3);
   margin-left: 20px;
+  padding: 0;
 }
 
 .user-block__links {
@@ -360,6 +371,9 @@ body {
   background: red;
 }
 
+.user-block__user-name::before {
+  background: red;
+}
 
 .user-block__link--login::after {
   background: red;
