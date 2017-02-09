@@ -21,8 +21,6 @@
           <div class='user-block'>
             <div class='user-block__user'>
               <a class='user-block__link user-block__link--login' href='#'>Войти</a>
-<!--               <span class='user-block__user-name'>Валентин Петухов</span>
-              <a class='user-block__link user-block__link--exit' href='#'>Выйти</a> -->
             </div>
 
             <div class='user-block__links'>
@@ -296,11 +294,11 @@
           проверить работоспособность покупки. Всякое бывает.
         </p>
 
-        <div class='map'>
+        <div class='map js-map'>
           <img src='img/map.jpg' width='560' height='220' alt='map'/>
         </div>
 
-        <a class='btn' href='#'>Напишите нам</a>
+        <a class='btn js-write-us' href='#'>Напишите нам</a>
       </div>
     </div>
 
@@ -354,34 +352,36 @@
       </div>
     </div>
 
-    <div class='modal'>
-      <button class='modal-close'>x</button>
-      <div class='modal-content'>
+    <div class='modal js-write-us-modal'>
+      <button class='modal__close'>x</button>
+      <div class='write-us'>
         <form action='index.html'>
-          <div class='clearfix'>
-            <div class='col-xs-6'>
+          <div class='write-us__rows'>
+            <div class='write-us__row'>
               <label for='name'>Ваше имя:</label>
               <input placeholder='Представьтесь, пожалуйста' type='text' name='name' id='name' />
             </div>
 
-            <div class='col-xs-6'>
+            <div class='write-us__row'>
               <label for='email'>Ваше e-mail:</label>
-              <input placeholder='Для отправки ответа' type='email' name='email' id='email' />
+              <input placeholder='Для отправки ответа' type='text' name='email' id='email' />
             </div>
           </div>
 
           <label for='message'>Текст письма:</label>
-          <textarea id='message' name='message'>В свободной форме</textarea>
+          <textarea rows='11' id='message' name='message' placeholder='В свободной форме'></textarea>
 
           <button class='btn' type='submit'>Отправить</button>
         </form>
       </div>
     </div>
 
-    <div class='modal'>
-      <button class='modal-close'>x</button>
+    <div class='modal js-map-modal  modal--open'>
+      <button class='modal__close'>x</button>
       <div class='modal-map'>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1486678555795" width="960" height="560" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
   </body>
+  <script type="text/javascript" src='js/script.js'></script>
 </html>

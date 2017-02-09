@@ -674,7 +674,11 @@ body {
 }
 
 .info-contacts .map {
-  padding-bottom: 70px;
+  margin-bottom: 70px;
+}
+
+.map {
+  cursor: pointer;
 }
 
 /* -----------------------  filter + catalog  -----------------*/
@@ -1168,6 +1172,60 @@ body {
 /* -----------------------  modal  -----------------*/
 .modal {
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.23); /* TOOD: fix */
+}
+
+.modal__close {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  border: none;
+  background: #ffc600;
+  text-indent: -9999px;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.5;
+}
+
+.modal__close::after,
+.modal__close::before {
+  width: 2px;
+  height: 30px;
+  background: #fff;
+  position: absolute;
+  content: '';
+  top: 12px;
+  left: 27px;
+}
+
+.modal__close::after {
+  transform: rotate(45deg);
+}
+
+.modal__close::before {
+  transform: rotate(-45deg);
+}
+
+.modal__close:hover {
+  opacity: 1;
+}
+
+.modal__close:active:after,
+.modal__close:active:before {
+  opacity: 0.3;
+}
+
+
+.modal--open {
+  display: block;
 }
 
 
@@ -1316,4 +1374,53 @@ input[type=radio]:checked + label:before {
   font-size: 14px;
   line-height: 22px;
 }
+
+/* -----------------------  modal-map  -----------------*/
+.modal-map {
+  background: url(../img/bigMap.jpg);
+  width: 960px;
+  height: 560px;
+}
+
+/* -----------------------  write-us  -----------------*/
+.write-us {
+  background: #fff;
+  color: #000;
+  padding: 75px 100px;
+}
+
+.write-us__rows {
+  display: flex;
+  justify-content: space-between;
+  width: 760px; /* 360 + 40 + 360 */
+}
+
+.write-us__row {
+  width: 360px;
+}
+
+.write-us input,
+.write-us textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  background: #f2f2f2;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.write-us label {
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: gilroyextrabold;
+  margin-bottom: 10px;
+}
+
+.write-us .input-error {
+  background: #ffdada;
+}
+
 

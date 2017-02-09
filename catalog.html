@@ -20,8 +20,7 @@
 
           <div class='user-block'>
             <div class='user-block__user'>
-<!--               <a class='user-block__link user-block__link--login' href='#'>Войти</a>
- -->          <span class='user-block__user-name'>Валентин Петухов</span>
+              <span class='user-block__user-name'>Валентин Петухов</span>
               <a class='user-block__link user-block__link--exit' href='#'>Выйти</a>
             </div>
 
@@ -87,13 +86,17 @@
 
                 <div class="range">
                   <button class="range_left">
-                    <span>от 50</span>
                   </button>
                   <button class="range_right">
-                    <span>до 5000</span>
                   </button>
                   <div class="range_field"></div>
                 </div>
+                <span class='range_left__value'>от 50</span>
+                <span class='range_right__value'>до 5000</span>
+
+                <input type="hidden" name="min_price" />
+                <input type="hidden" name="max_price" />
+
             </fieldset>
 
             <fieldset>
@@ -280,4 +283,5 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript" src='js/script.js'></script>
 </html>
