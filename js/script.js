@@ -4,6 +4,7 @@ var Popup = function(options) {
   var modalSelector = options.modalSelector;
   var openedClass = options.openedClass || 'modal--open';
   var closeSelector = options.closeSelector || '.modal__close';
+  var onClose = options.onClose || function() {};
 
   var link = document.querySelector(buttonSelector);
   var popup = document.querySelector(modalSelector);
@@ -20,12 +21,14 @@ var Popup = function(options) {
   closeBtn.addEventListener('click', function(e) {
     e.preventDefault()
     popup.classList.remove(openedClass);
+    onClose(popup);
   });
 
   window.addEventListener('keydown', function(e) {
     if (e.keyCode === 27) {
       if (popup.classList.contains(openedClass)) {
         popup.classList.remove(openedClass);
+        onClose(popup);
       }
     }
   })
@@ -115,7 +118,25 @@ var Form = function(options) {
     if (isValidate(formData)) {
       onSumbit(formData, form);
     }
-  })
+  });
+
+  var cleanValidationErrors = function() {
+    var elements = form.querySelectorAll( "input, select, textarea" );
+
+    for(var i = 0; i < elements.length; ++i ) {
+      (function(i){
+        var element = elements[i];
+        element.classList.remove(errorClass);
+      })(i);
+    }
+  }
+
+  this.clean = function() {
+    form.reset();
+    cleanValidationErrors();
+  }
+
+  this.form = form;
 }
 
 /* -----------------------  Slider -----------------*/
@@ -253,17 +274,7 @@ var Slider = function(options) {
 
 /* -----------------------  App -----------------*/
 window.onload = function(){
-  Popup({
-    buttonSelector: '.js-map',
-    modalSelector: '.js-map-modal',
-  });
-
-  var contactUsPopup = new Popup({
-    buttonSelector: '.js-write-us',
-    modalSelector: '.js-write-us-modal',
-  });
-
-  Form({
+  var writeUsForm = new Form({
     formSelector: '.js-write-us-modal form',
     onError: function() {
       var popup = contactUsPopup.popup;
@@ -288,6 +299,20 @@ window.onload = function(){
     },
     onSumbit: function(data){
       console.log(' save form ', data);
+    }
+  });
+
+  Popup({
+    buttonSelector: '.js-map',
+    modalSelector: '.js-map-modal',
+  });
+
+  var contactUsPopup = new Popup({
+    buttonSelector: '.js-write-us',
+    modalSelector: '.js-write-us-modal',
+    onClose: function(popup) {
+      popup.classList.remove("modal--error");
+      writeUsForm.clean();
     }
   });
 
