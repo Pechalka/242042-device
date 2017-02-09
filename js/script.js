@@ -29,6 +29,8 @@ var Popup = function(options) {
       }
     }
   })
+
+  this.popup = popup;
 }
 
 /* -----------------------  Form -----------------*/
@@ -78,7 +80,7 @@ var Form = function(options) {
   var fieldsSelectors = Object.keys(options.fields || {});
   var validate = options.validate || function() { return {}; };
   var onSumbit = options.onSumbit || function() {};
-
+  var onError = options.onError || function() {};
 
   clearErrorsOnFocus(form, errorClass);
 
@@ -100,6 +102,8 @@ var Form = function(options) {
         }
       }
     }
+
+    onError(errors);
 
     return false;
   }
@@ -254,13 +258,19 @@ window.onload = function(){
     modalSelector: '.js-map-modal',
   });
 
-  Popup({
+  var contactUsPopup = new Popup({
     buttonSelector: '.js-write-us',
     modalSelector: '.js-write-us-modal',
   });
 
   Form({
     formSelector: '.js-write-us-modal form',
+    onError: function() {
+      var popup = contactUsPopup.popup;
+      popup.classList.remove("modal--error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal--error");
+    },
     validate: function(values){
       if (!values.name) {
         return { name: 'Введите имя' };
