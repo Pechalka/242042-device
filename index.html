@@ -58,77 +58,89 @@
     </div>
 
     <div class='slider container'>
+      <input type="radio" id="btn-1" name="toggle" checked>
+      <input type="radio" id="btn-2" name="toggle">
+      <input type="radio" id="btn-3" name="toggle">
+
       <div class='slider__nav'>
-        <a href='#'>*</a>
-        <a class='active'>*</a>
-        <a href='#'>*</a>
+        <label class='slider__nav-item' for="btn-1"></label>
+        <label class='slider__nav-item' for="btn-2"></label>
+        <label class='slider__nav-item' for="btn-3"></label>
       </div>
 
-      <div class='slide'>
-        <div class='slide__wrapper'>
-          <img src='img/slide1.png' alt='Фитнесс-браслеты'>
+      <div class='slides'>
+        <div class='slide'>
+          <div class='slide__wrapper'>
+            <img width="384" height="486" src='img/slide1.png' alt='Фитнесс-браслеты'>
+          </div>
+          <div class='slide__content'>
+            <span class='slider__number'>01</span>
+            <h2>Делай селфи,<br /> как Бен Стиллер!</h2>
+            <p>
+              Самая длинная палка для селфи доступна в нашем магазине.<br />
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+            </p>
+            <a href='catalog.html' class='btn'>Подробней</a>
+            <div class='product-props'>
+              <div class='product-props__item'>
+                <span class='product-props__label'>8,5 м</span>
+                <span class='product-props__value'>Длина палки</span>
+              </div>
+              <div class='product-props__item'>
+                <span class='product-props__label'>5 кг</span>
+                <span class='product-props__value'>Вес палки</span>
+              </div>
+              <div class='product-props__item'>
+                <span class='product-props__label'>Карбон</span>
+                <span class='product-props__value'>Материал</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class='slide__content'>
-          <span class='slider__number'>01</span>
-          <h2>Делай селфи, как Бен Стиллер!</h2>
-          <p>
-            Самая длинная палка для селфи доступна в нашем магазине.
-            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-          </p>
-          <a href='#' class='btn'>Подробней</a>
-          <div>
-            <span>8,5 м</span>
-            <span>Длина палки</span>
-          </div>
-          <div>
-            <span>5 кг</span>
-            <span>Вес палки</span>
-          </div>
-          <div>
-            <span>Карбон</span>
-            <span>Материал</span>
-          </div>
-        </div>
-      </div>
 
-      <div class='slide slide--active'>
-        <div class='slide__wrapper'>
-          <img src='img/slide2.png' alt='Фитнесс-браслеты'>
-        </div>
-        <div class='slide__content'>
-          <span class='slider__number'>02</span>
-          <h2>Худеем<br /> правильно!</h2>
-          <p>
-            Мотивирующие фитнесс-браслеты помогут найти в себе силы
-            не пропускать занятия и соблюдать диету.
-          </p>
-          <a href='#' class='btn'>Подробней</a>
-          <div>
-            <span>48 часов</span>
-            <span>Без подзарядки</span>
+        <div class='slide'>
+          <div class='slide__wrapper'>
+            <img width="345" height="485" src='img/slide2.png' alt='Фитнесс-браслеты'>
+          </div>
+          <div class='slide__content'>
+            <span class='slider__number'>02</span>
+            <h2>Худеем<br /> правильно!</h2>
+            <p>
+              Мотивирующие фитнесс-браслеты помогут найти в себе силы<br />
+              не пропускать занятия и соблюдать диету.
+            </p>
+            <a href='catalog.html' class='btn'>Подробней</a>
+            <div class='product-props'>
+              <div class='product-props__item'>
+                <span class='product-props__label'>48 часов</span>
+                <span class='product-props__value'>Без подзарядки</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class='slide'>
-        <div class='slide__wrapper'>
-          <img src='img/slide3.png' alt='Фитнесс-браслеты'>
-        </div>
-        <div class='slide__content'>
-          <span class='slider__number'>03</span>
-          <h2>Порхает как бабочка, жалит как пчела!</h2>
-          <p>
-            Этот обычный, на первый взгляд, квадрокоптер оснащен
-            мощным лазером, замаскированным под стандартную камеру.
-          </p>
-          <a  href='#' class='btn'>Подробней</a>
-          <div>
-            <span>800 м</span>
-            <span>Дальность полета</span>
+        <div class='slide'>
+          <div class='slide__wrapper'>
+            <img width="526" height="334" src='img/slide3.png' alt='Фитнесс-браслеты'>
           </div>
-          <div>
-            <span>50 м</span>
-            <span>Радиус поражения</span>
+          <div class='slide__content'>
+            <span class='slider__number'>03</span>
+            <h2>Порхает как бабочка, жалит как пчела!</h2>
+            <p>
+              Этот обычный, на первый взгляд, квадрокоптер оснащен<br />
+              мощным лазером, замаскированным под стандартную камеру.
+            </p>
+            <a  href='catalog.html' class='btn'>Подробней</a>
+            <div class='product-props'>
+              <div class='product-props__item'>
+                <span class='product-props__label'>800 м</span>
+                <span class='product-props__value'>Дальность полета</span>
+              </div>
+              <div class='product-props__item'>
+                <span class='product-props__label'>50 м</span>
+                <span class='product-props__value'>Радиус поражения</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -204,43 +216,49 @@
 
     <div class='service'>
       <div class='container'>
+        <input type='radio' name='tabs' id='tab-1' checked />
+        <input type='radio' name='tabs' id='tab-2' />
+        <input type='radio' name='tabs' id='tab-3' />
+
         <ul>
           <li>
-            <a href='#'>Доставка</a>
+            <label for='tab-1' class='btn service__tab' href='#'>Доставка</label>
           </li>
           <li>
-            <a href='#'>Гарантия</a>
+            <label for='tab-2' class='btn service__tab' href='#'>Гарантия</label>
           </li>
           <li>
-            <a href='#'>Кредит</a>
+            <label for='tab-3' class='btn service__tab' href='#'>Кредит</label>
           </li>
         </ul>
 
-        <div class='delivery service__content service__content--active'>
-          <h2>Доставка</h2>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему
-            подъезду совершенно бесплатно! Ведь мы неплохо
-            заработаем, поднимая его на ваш этаж.
-          </p>
-        </div>
+        <div class='service__tab-content'>
+          <div class='delivery service__content service__content--active'>
+            <h2>Доставка</h2>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему
+              подъезду совершенно бесплатно! Ведь мы неплохо
+              заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
 
-        <div class='guarantee service__content'>
-          <h2>Гарантия</h2>
-          <p>
-            Если из-за возгарания купленного у нас товара у вас сгорит дом —
-            не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.
-          </p>
-        </div>
+          <div class='warranty service__content'>
+            <h2>Гарантия</h2>
+            <p>
+              Если из-за возгарания купленного у нас товара у вас сгорит дом —
+              не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.
+            </p>
+          </div>
 
-        <div class='credit service__content'>
-          <h2>Кредит</h2>
-          <p>
-            Залезть в долговую яму стало проще! Кредитные консультанты
-            подберут для вас наиболее выгодные
-            условия кредита. Выгодные для нашего банка, разумеется.
-          </p>
+          <div class='credit service__content'>
+            <h2>Кредит</h2>
+            <p>
+              Залезть в долговую яму стало проще! Кредитные консультанты
+              подберут для вас наиболее выгодные
+              условия кредита. Выгодные для нашего банка, разумеется.
+            </p>
+          </div>
         </div>
       </div>
     </div>
