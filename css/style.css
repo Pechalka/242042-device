@@ -16,11 +16,12 @@
 }
 
 @font-face {
-    font-family: 'gilroyextrabold';
-    src:
-        local('gilroyextrabold'),
-        url('../fonts/gilroyextrabold.woff') format('woff2'),
-        url('../fonts/gilroyextrabold.woff') format('woff');
+  font-family: 'gilroyextrabold';
+
+  src:
+      local('gilroyextrabold'),
+      url('../fonts/gilroyextrabold.woff') format('woff2'),
+      url('../fonts/gilroyextrabold.woff') format('woff');
 }
 
 @font-face {
@@ -35,7 +36,8 @@
 
 body {
   font-size: 18px;
-  font-family: opensanslight;
+  font-family: opensanslight, "Arial", sans-serif;
+  font-weight: 100;
   letter-spacing: 0.01em;
 }
 
@@ -81,7 +83,8 @@ html {
   border: none;
   cursor: pointer;
   outline: none;
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   letter-spacing: 0.2em;
   z-index: 2;
 }
@@ -241,7 +244,8 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   height: 60px;
   line-height: 60px;
   padding-right: 30px;
@@ -306,7 +310,8 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
 }
 
 .top-menu__link:hover {
@@ -480,7 +485,8 @@ html {
   right: -10px;
   top: -40px;
   font-size: 180px;
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   color: #fff;
 }
 
@@ -492,7 +498,8 @@ html {
 .slide__content h2 {
   font-size: 47px;
   line-height: 52px;
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   margin-bottom: 30px;
   margin-top: 0;
   position: relative;
@@ -549,7 +556,8 @@ html {
   display: block;
   font-size: 36px;
   margin-bottom: 10px;
-  font-family: gilroylight;
+  font-family: gilroylight, "Arial", sans-serif;
+  font-weight: 100;
 }
 
 .product-props__value {
@@ -608,7 +616,8 @@ html {
   padding-left: 60px;
   padding-bottom: 40px;
   color: #000;
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
 }
 
 .page-title__title {
@@ -665,7 +674,8 @@ html {
   text-decoration: none;
   text-decoration: none;
   color: #000;
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
 }
 
 .popular_label {
@@ -695,7 +705,8 @@ html {
 
 .service__content h2 {
   font-size: 47px;
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   margin-bottom: 30px;
   margin-top: 0;
 }
@@ -849,7 +860,8 @@ html {
 .info-contacts h2 {
   font-size: 47px;
   letter-spacing: 0.01em;
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   position: relative;
   margin-top: 0;
   padding-top: 50px;
@@ -878,7 +890,8 @@ html {
   padding: 0;
   margin: 0;
 
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   font-size: 16px;
   line-height: 40px;
   margin-top: 55px;
@@ -919,12 +932,12 @@ html {
 .catalog__filter-wrapper {
   width: calc(50% - 252px);
   background-color: #eee;
-  min-width: 330px;
+  min-width: 350px; /* for small resolution */
 }
 .catalog__content-wrapper {
   width: calc(252px + 50%);
   margin-bottom: 70px;
-  min-width: 830px;
+  min-width: 850px; /* for small resolution */
 }
 
 .catalog__filter-title {
@@ -938,7 +951,8 @@ html {
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 0.2em;
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   display: flex;
   align-items: center;
 }
@@ -982,7 +996,8 @@ html {
   line-height: 30px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   margin-right: 50px;
 }
 
@@ -998,7 +1013,8 @@ html {
   font-size: 14px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
-  font-family: opensans;
+  font-family: opensans, "Arial", sans-serif;;
+  font-weight: normal;
 }
 
 .catalog-sort__types a:hover {
@@ -1112,19 +1128,22 @@ html {
   right: 30px;
   top: 30px;
   color: rgba(0, 0, 0, 0.2);
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   box-sizing: border-box;
 }
 
 .products__title {
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.01em;
   width: 260px;
 }
 
 .products__price {
-  font-family: opensanslight;
+  font-family: opensanslight, "Arial", sans-serif;
+  font-weight: 100;
   font-size: 16px;
   letter-spacing: 0.01em;
 }
@@ -1276,7 +1295,8 @@ html {
   line-height: 36px;
   color: #fff;
   text-decoration: none;
-  font-family: opensanslight;
+  font-family: opensanslight, "Arial", sans-serif;
+  font-weight: 100;
   position: relative;
   padding-left: 30px;
   color: rgba(255, 255, 255, 0.7);
@@ -1364,7 +1384,8 @@ html {
   text-transform: uppercase;
   margin-right: 40px;
   text-decoration: none;
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   letter-spacing: 0.2em;
 }
 
@@ -1561,7 +1582,8 @@ fieldset {
 legend {
   position: absolute;
   top: 15px;
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
 }
 
 /* -----------------------  checkbox + radio  -----------------*/
@@ -1709,7 +1731,8 @@ input[type=radio]:checked + label:before {
   font-size: 14px;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.2);
-  font-family: gilroylight;
+  font-family: gilroylight, "Arial", sans-serif;
+  font-weight: 100;
 }
 /* -----------------------  modal-map  -----------------*/
 .modal-map {
@@ -1763,7 +1786,8 @@ input[type=radio]:checked + label:before {
   display: block;
   font-size: 18px;
   line-height: 18px;
-  font-family: gilroyextrabold;
+  font-family: gilroyextrabold, "Arial", sans-serif;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
