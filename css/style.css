@@ -612,7 +612,7 @@ html {
 }
 
 .page-title__title {
-  margin-top: 40px;
+  margin-top: 33px;
   margin-bottom: 12px;
   font-size: 47px;
 }
@@ -947,7 +947,7 @@ html {
   padding-left: 60px;
   padding-right: 70px;
   background-color: #eeeeee;
-  padding-top: 65px;
+  padding-top: 69px;
   margin-left: auto;
   width: 200px;
   box-sizing: content-box;
@@ -965,7 +965,7 @@ html {
 .catalog__content {
   width: 760px; /* 830 - 70 */
   padding-left: 70px;
-  padding-top: 65px;
+  padding-top: 69px;
   box-sizing: content-box;
 }
 
@@ -1555,7 +1555,7 @@ fieldset {
   margin: 0;
   padding:0;
   padding-top: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
 }
 
 legend {
@@ -1652,6 +1652,7 @@ input[type=radio]:checked + label:before {
   margin-top: 20px;
   margin-bottom: 20px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .range_left,
@@ -1666,6 +1667,7 @@ input[type=radio]:checked + label:before {
   z-index: 1;
   border: 2px solid #000;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .range_left:active,
@@ -1702,6 +1704,13 @@ input[type=radio]:checked + label:before {
   line-height: 22px;
 }
 
+.range_left__value,
+.range_right__value {
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.2);
+  font-family: gilroylight;
+}
 /* -----------------------  modal-map  -----------------*/
 .modal-map {
   background: url(../img/bigMap.jpg);
