@@ -78,9 +78,9 @@
       <div class='catalog__filter-wrapper'>
         <div class='catalog__filter-title'>Фильтр:</div>
         <div class='catalog__filter'>
-          <form action='catalog.html' method='GET'>
+          <form class='filter' action='catalog.html' method='GET'>
             <fieldset>
-                <legend>Стоимость</legend>
+                <label class='legend'>Стоимость</label>
 
                 <div class="range">
                   <button class="range_left">
@@ -97,27 +97,35 @@
 
             </fieldset>
 
-            <fieldset>
-              <legend>Цвет</legend>
+            <fieldset class='colors-sections'>
+              <label class='legend'>Цвет</label>
 
-              <input type='checkbox' checked id='black' name='black' />
-              <label for='black'>Черный</label>
-
-              <input type='checkbox' id='white' name='white' />
-              <label for='white'>Белый</label>
-
-              <input type='checkbox' checked id='blue' name='blue' />
-              <label for='blue'>Синий</label>
-
-              <input type='checkbox' checked id='red' name='red' />
-              <label for='red'>Красный</label>
-
-              <input type='checkbox' id='pink' name='pink' />
-              <label for='pink'>Розовый</label>
+              <ul class='colors'>
+                <li>
+                  <input type='checkbox' checked id='black' name='black' />
+                  <label for='black'>Черный</label>
+                </li>
+                <li>
+                  <input type='checkbox' id='white' name='white' />
+                  <label for='white'>Белый</label>
+                </li>
+                <li>
+                  <input type='checkbox' checked id='blue' name='blue' />
+                  <label for='blue'>Синий</label>
+                </li>
+                <li>
+                  <input type='checkbox' checked id='red' name='red' />
+                  <label for='red'>Красный</label>
+                </li>
+                <li>
+                  <input type='checkbox' id='pink' name='pink' />
+                  <label for='pink'>Розовый</label>
+                </li>
+              </ul>
             </fieldset>
 
             <fieldset>
-              <legend>Bluetooth</legend>
+              <label class='legend'>Bluetooth</label>
 
               <input checked type='radio' id='bluetooth-yes' value='yes' name='bluetooth' />
               <label for='bluetooth-yes'>Есть</label>
@@ -159,9 +167,11 @@
                   <a class='compare' href='#'>Добавить к сравнению</a>
                 </div>
               </div>
-              <b class='products__title'>Любительская селфи-палка</b>
-              <div class='products__price'>
-                500 руб.
+              <div class='products__title-price'>
+                <b class='products__title'>Любительская селфи-палка</b>
+                <div class='products__price'>
+                  500 руб.
+                </div>
               </div>
             </div>
 
@@ -173,9 +183,11 @@
                   <a class='compare' href='#'>Добавить к сравнению</a>
                 </div>
               </div>
-              <b class='products__title'>Профессиональная<br/> селфи-палка</b>
-              <div class='products__price'>
-                1500 руб.
+              <div class='products__title-price'>
+                <b class='products__title'>Профессиональная<br/> селфи-палка</b>
+                <div class='products__price'>
+                  1 500 руб.
+                </div>
               </div>
             </div>
 
@@ -187,10 +199,11 @@
                   <a class='compare' href='#'>Добавить к сравнению</a>
                 </div>
               </div>
-
-              <b class='products__title'>Непотопляемая селфи-палка</b>
-              <div class='products__price'>
-                2500 руб.
+              <div class='products__title-price'>
+                <b class='products__title'>Непотопляемая селфи-палка</b>
+                <div class='products__price'>
+                  2 500 руб.
+                </div>
               </div>
             </div>
 
@@ -202,10 +215,11 @@
                   <a class='compare' href='#'>Добавить к сравнению</a>
                 </div>
               </div>
-
-              <b class='products__title'>Селфи-палка «Следуй за мной»</b>
-              <div class='products__price'>
-                4900 руб.
+              <div class='products__title-price'>
+                <b class='products__title'>Селфи-палка «Следуй за мной»</b>
+                <div class='products__price'>
+                  4 900 руб.
+                </div>
               </div>
             </div>
           </div>
@@ -234,7 +248,7 @@
     <div class='footer'>
       <div class='container'>
         <div class='footer__line'>
-          <a>
+          <a class='footer-logo'>
             <img src='img/logo-yellow.png' width='160' height='40' alt='DEVICE'/>
           </a>
 
