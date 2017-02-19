@@ -863,6 +863,12 @@ html {
   /*flex-wrap: wrap;*/
 }
 
+@media (max-width: 1200px) {
+  .logos {
+    flex-wrap: wrap;
+  }
+}
+
 .logos img {
   filter: grayscale(100%);
 }
